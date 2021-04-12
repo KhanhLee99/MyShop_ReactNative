@@ -1,21 +1,47 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import Authentication from './src/Components/Authentication/Authentication';
+import Main from './src/Components/Main/Main';
+import ChangeInfo from './src/Components/ChangeInfo/ChangeInfo';
+import OrderHistory from './src/Components/OrderHistory/OrderHistory';
+
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="MAIN">
+        <Stack.Screen name="MAIN" component={MainScreen} />
+        <Stack.Screen name="AUTHENTICATION" component={AuthenticationScreen} />
+        <Stack.Screen name="CHANGE_INFO" component={ChangeInfoScreen} />
+        <Stack.Screen name="ORDER_HISTORY" component={OrderHistoryScreen} />
+      </Stack.Navigator>
+    </NavigationContainer >
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+function MainScreen({ navigation }) {
+  return (
+    <Main navigation={navigation} />
+  );
+}
+
+function AuthenticationScreen({ navigation }) {
+  return (
+    <Authentication navigation={navigation} />
+  );
+}
+function ChangeInfoScreen({ navigation }) {
+  return (
+    <ChangeInfo navigation={navigation} />
+  );
+}
+function OrderHistoryScreen({ navigation }) {
+  return (
+    <OrderHistory navigation={navigation} />
+  );
+}
+
