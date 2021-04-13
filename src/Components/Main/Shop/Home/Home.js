@@ -9,11 +9,9 @@ import TopProduct from './TopProduct';
 class Home extends Component {
     render() {
         return (
-            // <View style={{ flex: 1, backgroundColor: '#DBDBD8' }}>
-            //     <Collection />
-            //     <Category />
-            // </View>
             <ScrollView style={{ flex: 1, backgroundColor: '#DBDBD8' }}>
+                <Collection />
+                <Category />
                 <TopProduct />
             </ScrollView>
         );

@@ -17,12 +17,16 @@ export default class Category extends Component {
                     <Text style={textStyle} >LIST OF CATEGORY</Text>
                 </View>
                 <View style={{ justifyContent: 'flex-end', flex: 4 }}>
-                    <Swiper showsPagination width={imageWidth} height={imageHeight}>
+                    <Swiper showsPagination width={imageWidth} height={imageHeight} >
                         <Image source={littleIcon} style={imageStyle}>
                             {/* <Text style={cateTitle}>Maxi Dress</Text> */}
                         </Image>
-                        <Image source={maxiIcon} style={imageStyle} />
-                        <Image source={partyIcon} style={imageStyle} />
+                        <Image source={maxiIcon} style={imageStyle}>
+                            {/* <Text style={cateTitle}>Maxi Dress</Text> */}
+                        </Image>
+                        <Image source={partyIcon} style={imageStyle}>
+                            {/* <Text style={cateTitle}>Maxi Dress</Text> */}
+                        </Image>
                     </Swiper>
                 </View>
             </View>
