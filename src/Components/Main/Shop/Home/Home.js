@@ -1,21 +1,22 @@
+import React from 'react';
+import { createStackNavigator } from '@react-navigation/stack';
+import HomeView from './HomeView';
+import ListProduct from '../ListProduct/ListProduct';
+import ProductDetail from '../ProductDetail/ProductDetail';
 
-import React, { Component } from 'react';
-import { View, Text } from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
-import Category from './Category';
-import Collection from './Collection';
-import TopProduct from './TopProduct';
 
-class Home extends Component {
-    render() {
-        return (
-            <ScrollView style={{ flex: 1, backgroundColor: '#DBDBD8' }}>
-                <Collection />
-                <Category />
-                <TopProduct />
-            </ScrollView>
-        );
-    }
+const Stack1 = createStackNavigator();
+
+export default function Home() {
+    return (
+        <Stack1.Navigator
+            initialRouteName="HOME_VIEW"
+            screenOptions={{
+                headerShown: false
+            }}>
+            <Stack1.Screen name="HOME_VIEW" component={HomeView} />
+            <Stack1.Screen name="LIST_PRODUCT" component={ListProduct} />
+            <Stack1.Screen name="PRODUCT_DETAIL" component={ProductDetail} />
+        </Stack1.Navigator>
+    );
 }
-
-export default Home;

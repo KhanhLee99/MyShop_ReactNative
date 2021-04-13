@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text, Image, StyleSheet, Dimensions } from 'react-native';
+import { View, Text, Image, StyleSheet, Dimensions, Button } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import Swiper from 'react-native-swiper';
 
 import littleIcon from '../../../../media/temp/little.jpg';
@@ -9,27 +10,29 @@ import partyIcon from '../../../../media/temp/party.jpg';
 const { width, height } = Dimensions.get('window');
 
 export default class Category extends Component {
+    gotoListProduct = () => {
+        this.props.navigation.navigate('PRODUCT_DETAIL')
+    }
     render() {
         const { wrapper, textStyle, imageStyle, cateTitle } = styles;
         return (
             <View style={wrapper}>
-                <View style={{ justifyContent: 'center', flex: 1, paddingTop: 5 }}>
-                    <Text style={textStyle} >LIST OF CATEGORY</Text>
+                <View style={{ justifyContent: 'center', height: 50 }}>
+                    <Text style={textStyle}>LIST OF CATEGORY</Text>
                 </View>
                 <View style={{ justifyContent: 'flex-end', flex: 4 }}>
                     <Swiper showsPagination width={imageWidth} height={imageHeight} >
-                        <Image source={littleIcon} style={imageStyle}>
-                            {/* <Text style={cateTitle}>Maxi Dress</Text> */}
-                        </Image>
+                        <TouchableOpacity onPress={this.gotoListProduct.bind(this)}>
+                            <Image source={littleIcon} style={imageStyle}>
+                            </Image>
+                        </TouchableOpacity>
                         <Image source={maxiIcon} style={imageStyle}>
-                            {/* <Text style={cateTitle}>Maxi Dress</Text> */}
                         </Image>
                         <Image source={partyIcon} style={imageStyle}>
-                            {/* <Text style={cateTitle}>Maxi Dress</Text> */}
                         </Image>
                     </Swiper>
                 </View>
-            </View>
+            </View >
         );
     }
 }
@@ -39,7 +42,7 @@ const imageHeight = imageWidth / 2;
 
 const styles = StyleSheet.create({
     wrapper: {
-        height: height * 0.35,
+        width: width - 20,
         backgroundColor: '#FFF',
         margin: 10,
         justifyContent: 'space-between',
