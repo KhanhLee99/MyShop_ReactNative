@@ -11,7 +11,7 @@ const { width, height } = Dimensions.get('window');
 
 export default class Category extends Component {
     gotoListProduct = () => {
-        this.props.navigation.navigate('PRODUCT_DETAIL')
+        this.props.navigation.navigate('LIST_PRODUCT')
     }
     render() {
         const { wrapper, textStyle, imageStyle, cateTitle } = styles;
