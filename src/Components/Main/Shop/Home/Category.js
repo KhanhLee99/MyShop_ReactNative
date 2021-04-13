@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     },
     cateTitle: {
         fontSize: 20,
-        fontFamily: 'Avenir',
+        // fontFamily: 'Avenir',
         color: '#9A9A9A'
     }
 });
