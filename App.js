@@ -12,7 +12,11 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="MAIN">
+      <Stack.Navigator
+        initialRouteName="MAIN"
+        screenOptions={{
+          headerShown: false
+        }}>
         <Stack.Screen name="MAIN" component={MainScreen} />
         <Stack.Screen name="AUTHENTICATION" component={AuthenticationScreen} />
         <Stack.Screen name="CHANGE_INFO" component={ChangeInfoScreen} />

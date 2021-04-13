@@ -5,6 +5,7 @@ import Home from './Home/Home';
 import Cart from './Cart/Cart';
 import Contact from './Contact/Contact';
 import Search from './Search/Search';
+import Header from './Header';
 
 
 const Tab = createBottomTabNavigator();
@@ -22,12 +23,13 @@ export default class Shop extends Component {
     render() {
         return (
             <View style={{ flex: 1 }}>
-                <View style={{ height: height / 8 }}>
+                {/* <View style={{ height: height / 8 }}>
                     <Button
                         title="Open Menu"
                         onPress={this.openMenu.bind(this)}
                     />
-                </View>
+                </View> */}
+                <Header onOpen={this.openMenu.bind(this)} />
                 <Tab.Navigator>
                     <Tab.Screen name="Home" component={Home} />
                     <Tab.Screen name="Cart" component={Cart} />
