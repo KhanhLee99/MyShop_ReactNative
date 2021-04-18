@@ -29,7 +29,9 @@ class CartView extends Component {
                             <View style={{ justifyContent: 'space-between', flexDirection: 'row' }}>
                                 <Text style={txtName}>{toTitleCase('black of the')}</Text>
                                 <TouchableOpacity>
-                                    <Text style={{ fontFamily: 'Avenir', color: '#969696' }}>X</Text>
+                                    <Text style={{ 
+                                        // fontFamily: 'Avenir', 
+                                        color: '#969696' }}>X</Text>
                                 </TouchableOpacity>
                             </View>
                             <View>
@@ -57,7 +59,9 @@ class CartView extends Component {
                             <View style={{ justifyContent: 'space-between', flexDirection: 'row' }}>
                                 <Text style={txtName}>{toTitleCase('black of the')}</Text>
                                 <TouchableOpacity>
-                                    <Text style={{ fontFamily: 'Avenir', color: '#969696' }}>X</Text>
+                                    <Text style={{ 
+                                        // fontFamily: 'Avenir', 
+                                        color: '#969696' }}>X</Text>
                                 </TouchableOpacity>
                             </View>
                             <View>
@@ -85,7 +89,9 @@ class CartView extends Component {
                             <View style={{ justifyContent: 'space-between', flexDirection: 'row' }}>
                                 <Text style={txtName}>{toTitleCase('black of the')}</Text>
                                 <TouchableOpacity>
-                                    <Text style={{ fontFamily: 'Avenir', color: '#969696' }}>X</Text>
+                                    <Text style={{ 
+                                        // fontFamily: 'Avenir', 
+                                        color: '#969696' }}>X</Text>
                                 </TouchableOpacity>
                             </View>
                             <View>
@@ -113,7 +119,9 @@ class CartView extends Component {
                             <View style={{ justifyContent: 'space-between', flexDirection: 'row' }}>
                                 <Text style={txtName}>{toTitleCase('black of the')}</Text>
                                 <TouchableOpacity>
-                                    <Text style={{ fontFamily: 'Avenir', color: '#969696' }}>X</Text>
+                                    <Text style={{ 
+                                        // fontFamily: 'Avenir', 
+                                        color: '#969696' }}>X</Text>
                                 </TouchableOpacity>
                             </View>
                             <View>
@@ -169,7 +177,7 @@ const styles = StyleSheet.create({
         color: '#FFF',
         fontSize: 15,
         fontWeight: 'bold',
-        fontFamily: 'Avenir'
+        // fontFamily: 'Avenir'
     },
     product: {
         flexDirection: 'row',
@@ -204,20 +212,20 @@ const styles = StyleSheet.create({
         color: '#A7A7A7',
         fontSize: 20,
         fontWeight: '400',
-        fontFamily: 'Avenir'
+        // fontFamily: 'Avenir'
     },
     txtPrice: {
         paddingLeft: 20,
         color: '#C21C70',
         fontSize: 20,
         fontWeight: '400',
-        fontFamily: 'Avenir'
+        // fontFamily: 'Avenir'
     },
     txtShowDetail: {
         color: '#C21C70',
         fontSize: 10,
         fontWeight: '400',
-        fontFamily: 'Avenir',
+        // fontFamily: 'Avenir',
         textAlign: 'right',
     },
     showDetailContainer: {

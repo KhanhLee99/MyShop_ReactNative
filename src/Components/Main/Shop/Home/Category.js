@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, Image, StyleSheet, Dimensions, Button } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import Swiper from 'react-native-swiper';
+// import Swiper from 'react-native-swiper';
 
 import littleIcon from '../../../../media/temp/little.jpg';
 import maxiIcon from '../../../../media/temp/maxi.jpg';
@@ -20,7 +20,7 @@ export default class Category extends Component {
                 <View style={{ justifyContent: 'center', height: 50 }}>
                     <Text style={textStyle}>LIST OF CATEGORY</Text>
                 </View>
-                <View style={{ justifyContent: 'flex-end', flex: 4 }}>
+                {/* <View style={{ justifyContent: 'flex-end', flex: 4 }}>
                     <Swiper showsPagination width={imageWidth} height={imageHeight} >
                         <TouchableOpacity onPress={this.gotoListProduct.bind(this)}>
                             <Image source={littleIcon} style={imageStyle}>
@@ -31,7 +31,7 @@ export default class Category extends Component {
                         <Image source={partyIcon} style={imageStyle}>
                         </Image>
                     </Swiper>
-                </View>
+                </View> */}
             </View >
         );
     }

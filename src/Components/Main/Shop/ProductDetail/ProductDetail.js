@@ -115,18 +115,18 @@ const styles = StyleSheet.create({
         marginVertical: 10
     },
     textBlack: {
-        fontFamily: 'Avenir',
+        // fontFamily: 'Avenir',
         fontSize: 20,
         fontWeight: 'bold',
         color: '#3F3F46'
     },
     textSmoke: {
-        fontFamily: 'Avenir',
+        // fontFamily: 'Avenir',
         fontSize: 20,
         color: '#9A9A9A'
     },
     textHighlight: {
-        fontFamily: 'Avenir',
+        // fontFamily: 'Avenir',
         fontSize: 20,
         color: '#7D59C8'
     },
@@ -161,12 +161,12 @@ const styles = StyleSheet.create({
         color: '#C21C70',
         fontSize: 15,
         fontWeight: '400',
-        fontFamily: 'Avenir'
+        // fontFamily: 'Avenir'
     },
     txtMaterial: {
         color: '#C21C70',
         fontSize: 15,
         fontWeight: '400',
-        fontFamily: 'Avenir'
+        // fontFamily: 'Avenir'
     }
 });

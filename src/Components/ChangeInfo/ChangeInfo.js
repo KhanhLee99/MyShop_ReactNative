@@ -67,14 +67,16 @@ export default class ChangeInfo extends Component {
 const styles = StyleSheet.create({
     wrapper: { flex: 1, backgroundColor: '#fff' },
     header: { flex: 1, backgroundColor: '#2ABB9C', alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row', paddingHorizontal: 10 },// eslint-disable-line
-    headerTitle: { fontFamily: 'Avenir', color: '#fff', fontSize: 20 },
+    headerTitle: { 
+        // fontFamily: 'Avenir', 
+        color: '#fff', fontSize: 20 },
     backIconStyle: { width: 30, height: 30 },
     body: { flex: 10, backgroundColor: '#F6F6F6', justifyContent: 'center' },
     textInput: {
         height: 45,
         marginHorizontal: 20,
         backgroundColor: '#FFFFFF',
-        fontFamily: 'Avenir',
+        // fontFamily: 'Avenir',
         paddingLeft: 20,
         borderRadius: 20,
         marginBottom: 20,
@@ -82,7 +84,9 @@ const styles = StyleSheet.create({
         borderWidth: 1
     },
     signInTextStyle: {
-        color: '#FFF', fontFamily: 'Avenir', fontWeight: '600', paddingHorizontal: 20
+        color: '#FFF', 
+        // fontFamily: 'Avenir', 
+        fontWeight: '600', paddingHorizontal: 20
     },
     signInContainer: {
         marginHorizontal: 20,

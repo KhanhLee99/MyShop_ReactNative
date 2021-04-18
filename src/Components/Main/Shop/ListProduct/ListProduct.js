@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
         borderWidth: 1
     },
     titleStyle: {
-        fontFamily: 'Avenir',
+        // fontFamily: 'Avenir',
         color: '#B10D65',
         fontSize: 20
     },
@@ -174,23 +174,23 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     txtName: {
-        fontFamily: 'Avenir',
+        // fontFamily: 'Avenir',
         color: '#BCBCBC',
         fontSize: 20,
         fontWeight: '400'
     },
     txtPrice: {
-        fontFamily: 'Avenir',
+        // fontFamily: 'Avenir',
         color: '#B10D65',
     },
     txtMaterial: {
-        fontFamily: 'Avenir'
+        // fontFamily: 'Avenir'
     },
     txtColor: {
-        fontFamily: 'Avenir'
+        // fontFamily: 'Avenir'
     },
     txtShowDetail: {
-        fontFamily: 'Avenir',
+        // fontFamily: 'Avenir',
         color: '#B10D65',
         fontSize: 11
     }

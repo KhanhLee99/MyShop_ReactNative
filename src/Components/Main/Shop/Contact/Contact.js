@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
         height: 30
     },
     infoText: {
-        fontFamily: 'Avenir',
+        // fontFamily: 'Avenir',
         color: '#AE005E',
         fontWeight: '500'
     }

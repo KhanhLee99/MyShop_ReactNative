@@ -117,34 +117,34 @@ const styles = StyleSheet.create({
         color: '#A7A7A7',
         fontSize: 20,
         fontWeight: '400',
-        fontFamily: 'Avenir'
+        // fontFamily: 'Avenir'
     },
     txtPrice: {
         paddingLeft: 20,
         color: '#C21C70',
         fontSize: 15,
         fontWeight: '400',
-        fontFamily: 'Avenir'
+        // fontFamily: 'Avenir'
     },
     txtColor: {
         paddingLeft: 20,
         color: 'black',
         fontSize: 15,
         fontWeight: '400',
-        fontFamily: 'Avenir'
+        // fontFamily: 'Avenir'
     },
     txtMaterial: {
         paddingLeft: 20,
         color: 'black',
         fontSize: 15,
         fontWeight: '400',
-        fontFamily: 'Avenir'
+        // fontFamily: 'Avenir'
     },
     txtShowDetail: {
         color: '#C21C70',
         fontSize: 10,
         fontWeight: '400',
-        fontFamily: 'Avenir',
+        // fontFamily: 'Avenir',
         textAlign: 'right',
     },
     showDetailContainer: {

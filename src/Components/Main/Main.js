@@ -16,13 +16,6 @@ export default class Main extends Component {
     render() {
         const { navigation } = this.props;
         return (
-            // <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-            //     <Text>MAIN COMPONENT</Text>
-            //     <Button
-            //         title="Go to Authenticaton"
-            //         onPress={() => this.props.navigation.navigate('AUTHENTICATION')}
-            //     />
-            // </View>
             <Drawer
                 ref={(ref) => { this.drawer = ref; }}
                 content={<Menu navigator={navigation} />}
